@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D SHOPPING</title>
+    <style>
+        .form{
+            display: flex;
+            justify-content: space-between;
+        }
+        .form img{
+            height: 500px;
+            margin-top: 0;
+        }
+        .form .form-details {
+    flex-basis: 48%;
+    margin-top: 60px;
+}
+
+.form .form-details input[type="text"],
+.form .form-details input[type="email"] {
+    padding: 15px 20px;
+    color: var(--grey);
+    outline: none;
+    border: 1px solid black;
+    margin: 35px 15px;
+    font-size: 14px;
+}
+
+.form .form-details textarea {
+    padding: 15px 20px;
+    margin: 10px 15px;
+    color: var(--grey);
+    outline: none;
+    border: 1px solid black;
+    font-size: 14px;
+    resize: none;
+}
+
+.form .form-details button {
+    padding: 15px 25px;
+    color: white;
+    font-weight: 500;
+    background: black;
+    outline: none;
+    border: none;
+    margin: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form .form-details button {
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"],
+    .form .form-details textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"] {
+        margin-bottom: 0px;
+    }
+    .form img{
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form img{
+        align-items: center;
+    }
+    .form .form-details button {
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"],
+    .form .form-details textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"] {
+        margin-bottom: 0px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <form action="women.html">
+        <div class="form">
+            <div class="form-img">
+            <img src="image/image7.jpg" alt="image">
+        </div>
+            <div class="form-details">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <textarea name="message" id="message" cols="52" rows="7" placeholder="Address" required></textarea>
+                <button>PLACE ORDER</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
